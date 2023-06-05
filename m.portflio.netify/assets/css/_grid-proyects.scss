@@ -1,0 +1,12 @@
+.boxes-container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, auto);
+  justify-items: center;
+  align-items: center;
+  gap: 0;
+  margin-bottom: 3.125rem;
+  img {
+    display: block;
+  }
+}
