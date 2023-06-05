@@ -1,0 +1,24 @@
+@use "./utils/inner-border" as border;
+.footer {
+  background-color: #eee;
+  display: block;
+  padding: 20px;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  p {
+    color: #333;
+    align-self: center;
+  }
+}
+#icons {
+  display: flex;
+  gap: 10px;
+  .icon svg {
+    height: 100%;
+    align-self: center;
+    display: block;
+  }
+}

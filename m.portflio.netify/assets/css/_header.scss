@@ -1,0 +1,102 @@
+$global-font: "Chakra Petch", "sans-serif";
+$global-font-size: 0.9375rem;
+$header-elements-padding: 20px;
+$list-elements-margin: 1.25rem;
+$list-element-topbottom: -0.625rem;
+:root,
+* {
+  font-family: $global-font;
+  margin: 0;
+  padding: 0;
+  font-size: $global-font-size;
+}
+
+#logo-header {
+  text-align: center;
+
+  #logo {
+    border-radius: 100%;
+  }
+}
+
+.menu-section.sticky {
+  top: 0;
+  position: sticky;
+  z-index: 2;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.92);
+  border-bottom: 2px solid rgb(223, 222, 222);
+  box-shadow: 0 0.1px 1px 0.1px #eeeeeed5;
+}
+.menu-section {
+  height: 60px;
+  .red-badge {
+    color: red;
+  }
+  text-transform: uppercase;
+  display: flex;
+  justify-content: flex-end;
+  .menu {
+    display: flex;
+    padding-right: 50px;
+    list-style: none;
+    align-content: center;
+    width: fit-content;
+    height: inherit;
+    li {
+      &:hover {
+        background: linear-gradient(transparent 60%, rgb(4, 217, 255) 60%);
+      }
+      text-align: center;
+      position: relative;
+      margin: 0 $list-elements-margin;
+      align-self: center;
+      cursor: pointer;
+      &:hover::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-color: #333;
+        height: 0.0625rem;
+        width: 100%;
+      }
+    }
+  }
+  &:nth-of-type(1) {
+    .menu {
+      li {
+        &:hover::after {
+          left: 0;
+          top: $list-element-topbottom;
+        }
+      }
+    }
+  }
+}
+
+#recent p {
+  text-align: center;
+  a {
+    padding: $header-elements-padding 0;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+  }
+}
+
+.line {
+  border: 2px solid #333;
+  border: 10 solid #333;
+}
+
+
+
+
+/* ┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉ */
+.l-text.grid{
+text-align: center;
+width: 100%;
+font-size: 50px;
+margin-bottom: 20px;
+}
