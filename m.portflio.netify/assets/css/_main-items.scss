@@ -30,7 +30,7 @@
   overflow: hidden;
   @include border.inner-border(rgba(4, 255, 192, 0.651), 8px);
   transition: all 1s;
-  &:hover img {
+  &:hover > a > img {
     transform: scale(1.05);
   }
 }
