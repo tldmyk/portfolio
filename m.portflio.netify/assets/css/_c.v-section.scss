@@ -5,3 +5,30 @@
     top: 5%;
   }
 }
+.sections.rl-div #cv {
+  align-items: center;
+  .icon {
+    width: max-content;
+  }
+}
+.sections.rl-div{
+  
+  border: 0;
+}
+.rl-box{
+  height: inherit;
+  align-items: center;
+}
+.cv-box {
+  cursor: pointer;
+  z-index: 1;
+  width: 70%;
+  height: inherit;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-items: center;
+  align-items: center;
+  .icon {
+    height: 50%;
+  }
+}
