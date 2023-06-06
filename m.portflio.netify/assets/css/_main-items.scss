@@ -7,16 +7,14 @@
 }
 
 .sections {
-  position: static;
+  width: 98%;
+  margin: 1.25rem auto;
+  overflow: hidden;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  text-align: center;
-  margin: 0 auto;
-  width: 98%;
-  overflow: hidden;
   flex-direction: column;
-  margin: 1.25rem auto;
+  align-items: center;
   img {
     display: block;
     width: 100%;
@@ -27,11 +25,15 @@
 
 .item {
   position: relative;
-  width: 100%;
+  width: 99%;
+  height: 220px;
   overflow: hidden;
   @include border.inner-border(rgba(4, 255, 192, 0.651), 8px);
   transition: all 1s;
   &:hover img {
     transform: scale(1.05);
   }
+}
+.item.d-border {
+  border: 1px solid #333;
 }
