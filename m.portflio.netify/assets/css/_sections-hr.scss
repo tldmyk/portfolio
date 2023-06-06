@@ -5,6 +5,15 @@ $tech-section-w: 90%;
   flex-wrap: wrap;
   align-items: center;
 }
+.divider {
+  position: absolute;
+  height: inherit;
+  top: 0;
+  left: $lr-width;
+  border: 0;
+  border-left: 0.1px solid #333;
+  transform: rotate(-150deg);
+}
 .rl-div {
   height: 300px;
   box-sizing: border-box;
@@ -14,15 +23,6 @@ $tech-section-w: 90%;
   border-top: 1px solid black;
   margin-bottom: 50px;
 
-  .divider {
-    position: absolute;
-    height: inherit;
-    top: 0;
-    left: $lr-width;
-    border: 0;
-    border-left: 0.1px solid #333;
-    transform: rotate(-150deg);
-  }
   .rl-box {
     width: $lr-width;
     display: flex;
