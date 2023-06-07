@@ -1,6 +1,5 @@
+@use "./utils/bg.scss" as background;
 @use "./utils/outline.scss";
-
-
 
 .sections {
   justify-content: center;
@@ -20,26 +19,12 @@
   }
 }
 
-
-.bg {
-  $bg-image: #fff;
-  $bg-image-opacity: 1;
-  position: relative;
-  isolation: isolate; /* NUEVO */
-  &::before {
-    position: absolute;
-    content: "";
-    z-index: -1;
-    background: $bg-image;
-    opacity: $bg-image-opacity;
-    inset: 0; /* NUEVO */
-    background-size: contain;
-  }
+.item.bg {
+  @include background.section-bg(#fff);
 }
 
-
 /* ┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉ */
-.r-content {
+.content {
   width: 90%;
   display: grid;
   grid-template-columns: minmax(auto, 60%) 40%;
@@ -69,6 +54,16 @@
     }
   }
 }
+
+/* ══════════════════════════════════════════════════════════════════════════ */
+/*                                    ICONS                                   */
+/* ══════════════════════════════════════════════════════════════════════════ */
+.icon {
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
 /* ══════════════════════════════════════════════════════════════════════════ */
 /*                                     HEY                                    */
 /* ══════════════════════════════════════════════════════════════════════════ */
@@ -117,3 +112,16 @@
 /* ══════════════════════════════════════════════════════════════════════════ */
 /*                                    STACK                                   */
 /* ══════════════════════════════════════════════════════════════════════════ */
+.item-b.bg {
+  @include background.section-bg(#000);
+}
+.item-b #hey h2 {
+  color: #fff;
+}
+
+.ham .line {
+  margin: 10px;
+  background-color: #3fb1a6;
+  height: 3px;
+  border: 0;
+}

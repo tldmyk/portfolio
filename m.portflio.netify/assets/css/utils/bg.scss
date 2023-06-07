@@ -1,0 +1,15 @@
+@mixin section-bg($bg-color) {
+  $bg-image: $bg-color;
+  $bg-image-opacity: 1;
+  position: relative;
+  isolation: isolate; /* NUEVO */
+  &::before {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    background: $bg-image;
+    opacity: $bg-image-opacity;
+    inset: 0; /* NUEVO */
+    background-size: contain;
+  }
+}
