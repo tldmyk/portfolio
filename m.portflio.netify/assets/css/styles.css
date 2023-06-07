@@ -217,13 +217,6 @@
   object-fit: cover;
 }
 
-#cv .divider {
-  transform: rotate(0);
-  height: 90%;
-  top: 5%;
-  border-left: 1px solid white;
-}
-
 .bg {
   position: relative;
   isolation: isolate; /* NUEVO */
