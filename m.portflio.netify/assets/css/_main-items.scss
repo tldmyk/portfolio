@@ -23,7 +23,7 @@
   }
 }
 
-.item {
+.item{
   position: relative;
   width: 99%;
   height: 220px;
@@ -33,7 +33,4 @@
   &:hover > a > img {
     transform: scale(1.05);
   }
-}
-.item.d-border {
-  border: 1px solid #333;
 }

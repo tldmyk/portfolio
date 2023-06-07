@@ -15,6 +15,7 @@ $tech-section-w: 90%;
   transform: rotate(-150deg);
 }
 .rl-div {
+  background-color: white;
   height: 300px;
   box-sizing: border-box;
   overflow: hidden;
@@ -56,4 +57,23 @@ $tech-section-w: 90%;
 }
 .js {
   border-radius: 100%;
+}
+/* ══════════════════════════════════════════════════════════════════════════ */
+/*                                 HEY HEADER                                 */
+/* ══════════════════════════════════════════════════════════════════════════ */
+.hey {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+#hey {
+  font-size: 100px;
+  color: #7cc7bc;
+  display: block;
+}
+#sub {
+  font-size: 40px;
 }
