@@ -1,3 +1,25 @@
+@use "./utils/outline.scss";
+
+
+
+.sections {
+  justify-content: center;
+  width: 100%;
+  margin: 1.25rem auto;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+  }
+}
+
 #cv {
   .divider {
     transform: rotate(0);
@@ -7,7 +29,7 @@
   }
 }
 .bg {
-  $bg-image: #000000;
+  $bg-image: #fff;
   $bg-image-opacity: 1;
   position: relative;
   isolation: isolate; /* NUEVO */
@@ -22,43 +44,12 @@
   }
 }
 
-.item-cv {
-  width: 99%;
-  height: 220px;
-  overflow: hidden;
-}
 
-.outline {
-  position: relative;
-  border: 1px solid #a2efe3;
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 99%;
-    height: 10%;
-    background-color: #a2efe3;
-    z-index: -1;
-  }
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    height: 95%;
-    width: 10px;
-    background-color: #a2efe3;
-  }
-}
-.sections {
-  height: 230px;
-}
 /* ┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉ */
 .r-content {
-  width: 100%;
+  width: 90%;
   display: grid;
-  grid-template-columns: repeat(2, auto);
+  grid-template-columns: minmax(auto, 60%) 40%;
   justify-items: center;
   align-items: center;
   justify-content: center;
@@ -68,6 +59,7 @@
     color: white;
   }
   .button {
+    font-size: 1.25rem;
     color: #f3faf9;
     text-decoration: none;
     background-color: #3fb1a6;
@@ -83,4 +75,54 @@
       transform: scale(1.2);
     }
   }
+}
+/* ══════════════════════════════════════════════════════════════════════════ */
+/*                                     HEY                                    */
+/* ══════════════════════════════════════════════════════════════════════════ */
+#hey span {
+  color: #3fb1a6;
+  font-size: 5rem;
+}
+#hey {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  h2 {
+    display: block;
+    color: #333;
+    font-size: 3.5rem;
+  }
+  p {
+    font-size: 3rem;
+  }
+}
+/* ══════════════════════════════════════════════════════════════════════════ */
+/*                                    ABOUT                                   */
+/* ══════════════════════════════════════════════════════════════════════════ */
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+/* ┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉ */
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px 0;
+  .icon {
+    width: 60px;
+    height: 60px;
+  }
+}
+/* ══════════════════════════════════════════════════════════════════════════ */
+/*                                    STACK                                   */
+/* ══════════════════════════════════════════════════════════════════════════ */
+#stack {
 }

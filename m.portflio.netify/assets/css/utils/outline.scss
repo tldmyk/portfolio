@@ -1,0 +1,47 @@
+.outline {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 99%;
+    height: 10%;
+    background-color: #a2efe3;
+    z-index: -1;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 95%;
+    width: 10px;
+    background-color: #a2efe3;
+  }
+}
+/* ══════════════════════════════════════════════════════════════════════════ */
+/*                               INNER AND OUTER                              */
+/* ══════════════════════════════════════════════════════════════════════════ */
+
+$section-inner__height: 500px;
+$section-out__height: calc($section-inner__height + 10px);
+
+.item {
+  width: 99%;
+  height: $section-inner__height;
+  overflow: hidden;
+  border: 1px solid #a2efe3;
+}
+$section-stack__innner-h: 300px;
+$section-stack__outer-h: calc($section-stack__innner-h + 10px);
+.stack {
+  height: $section-stack__innner-h;
+}
+.sections.stack {
+  height: $section-stack__outer-h;
+}
+.sections {
+  height: $section-out__height;
+}
+/* ┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉ */
