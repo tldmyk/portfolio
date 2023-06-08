@@ -8,7 +8,13 @@
   align-items: center;
   margin: 60px 0;
   height: 80vh;
+  background-color: #fff;
+  border: 1px solid #a2efe3;
+  z-index: 0;
 }
 #nav-stack{
   margin: 80px 0;
+}
+html{
+  scroll-behavior: smooth;
 }
