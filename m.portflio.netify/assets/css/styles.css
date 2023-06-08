@@ -2,7 +2,18 @@
 #wrapper {
   width: 90%;
   margin: 0 auto;
-  min-height: 100vh;
+  margin-bottom: 6.25rem;
+}
+
+#nav-portfolio {
+  display: flex;
+  align-items: center;
+  margin: 60px 0;
+  height: 80vh;
+}
+
+#nav-stack {
+  margin: 80px 0;
 }
 
 .container {
@@ -26,14 +37,16 @@
   border-radius: 100%;
 }
 
+/* ┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉ */
 .menu-section.sticky {
-  top: 0;
+  top: 0px;
   position: sticky;
   z-index: 10;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.918);
   border-bottom: 2px solid rgb(223, 222, 222);
   box-shadow: 0 0.1px 1px 0.1px rgba(238, 238, 238, 0.8352941176);
+  transition: all 0.5s;
 }
 
 .menu-section {
@@ -101,7 +114,7 @@
   bottom: 0;
   right: 0;
   width: 99%;
-  height: 10%;
+  height: 2%;
   background-color: #a2efe3;
   z-index: -1;
 }
@@ -120,7 +133,7 @@
 /* ══════════════════════════════════════════════════════════════════════════ */
 .item {
   width: 99%;
-  height: 500px;
+  height: 85vh;
   overflow: hidden;
   border: 1px solid #a2efe3;
 }
@@ -134,7 +147,7 @@
 }
 
 .sections {
-  height: 510px;
+  height: calc(85vh + 10px);
 }
 
 /* ┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉ */
@@ -224,13 +237,16 @@
   align-content: center;
   text-align: center;
 }
-#hey h2 {
-  display: block;
-  color: #333;
+#hey .section-title {
+  color: #000;
   font-size: 3.5rem;
 }
-#hey p {
+#hey #sub {
   font-size: 3rem;
+}
+#hey #desc {
+  font-size: 1.875rem;
+  margin-top: 3.125rem;
 }
 
 /* ══════════════════════════════════════════════════════════════════════════ */
@@ -273,7 +289,7 @@
   background-size: contain;
 }
 
-.item-b #hey h2 {
+.item-b #hey > .section-title {
   color: #fff;
 }
 
@@ -282,6 +298,53 @@
   background-color: #3fb1a6;
   height: 3px;
   border: 0;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════ */
+/*                                   CONTACT                                  */
+/* ══════════════════════════════════════════════════════════════════════════ */
+.section-title.contact {
+  color: #000;
+  font-size: 3.5rem;
+  justify-self: flex-start;
+  margin-top: 40px;
+}
+
+.item.c {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#contact {
+  text-align: center;
+  height: 150px;
+}
+#contact p {
+  font-size: 1.5625rem;
+  padding: 10px 0;
+}
+#contact #mail {
+  color: #000;
+  text-decoration: none;
+}
+#contact #mail p {
+  border-bottom: 1px solid #ccc;
+}
+#contact #whatsapp {
+  text-decoration: none;
+  color: #fff;
+}
+#contact #whatsapp p {
+  margin-top: 10px;
+  background: linear-gradient(90deg, #31b39b, #74ce85);
+  border-radius: 30px;
+  transition: all 0.5s;
+}
+#contact #whatsapp p:hover {
+  background: #fff;
+  color: #000;
+  border: 1px solid #a2efe3;
 }
 
 .head.grid {
@@ -298,7 +361,6 @@
   justify-items: center;
   align-items: center;
   gap: 0;
-  margin-bottom: 3.125rem;
 }
 .boxes-container .item-g {
   width: 100%;
@@ -326,7 +388,8 @@
 }
 
 .footer {
-  background-color: #eee;
+  background-color: #333;
+  /*   background-image: url(/m.portflio.netify/assets/img/bg/bg_st.png); */
   display: block;
   padding: 20px;
 }
@@ -337,7 +400,7 @@
   justify-content: space-around;
 }
 .footer.container p {
-  color: #333;
+  color: #fff;
   align-self: center;
 }
 

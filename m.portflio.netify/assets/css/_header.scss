@@ -18,15 +18,16 @@ $list-element-topbottom: -0.625rem;
     border-radius: 100%;
   }
 }
-
+/* ┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉ */
 .menu-section.sticky {
-  top: 0;
+  top: 0px;
   position: sticky;
   z-index: 10;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.918);
   border-bottom: 2px solid rgb(223, 222, 222);
   box-shadow: 0 0.1px 1px 0.1px #eeeeeed5;
+  transition: all 0.5s;
 }
 .menu-section {
   height: 60px;
@@ -89,7 +90,3 @@ $list-element-topbottom: -0.625rem;
   border: 2px solid #333;
   border: 10 solid #333;
 }
-
-
-
-

@@ -1,6 +1,7 @@
 @use "./utils/inner-border" as border;
 .footer {
-  background-color: #eee;
+  background-color: #333;
+  /*   background-image: url(/m.portflio.netify/assets/img/bg/bg_st.png); */
   display: block;
   padding: 20px;
 }
@@ -9,7 +10,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
   p {
-    color: #333;
+    color: #fff;
     align-self: center;
   }
 }

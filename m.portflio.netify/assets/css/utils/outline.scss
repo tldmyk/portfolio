@@ -6,7 +6,7 @@
     bottom: 0;
     right: 0;
     width: 99%;
-    height: 10%;
+    height: 2%;
     background-color: #a2efe3;
     z-index: -1;
   }
@@ -24,7 +24,7 @@
 /*                               INNER AND OUTER                              */
 /* ══════════════════════════════════════════════════════════════════════════ */
 
-$section-inner__height: 500px;
+$section-inner__height: 85vh;
 $section-out__height: calc($section-inner__height + 10px);
 
 .item {
