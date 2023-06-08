@@ -13,6 +13,7 @@
   background-color: #fff;
   border: 1px solid #a2efe3;
   z-index: 0;
+  overflow: hidden;
 }
 
 #nav-stack {
@@ -80,6 +81,10 @@ html {
   align-self: center;
   cursor: pointer;
 }
+.menu-section .menu li a {
+  color: #000;
+  text-decoration: none;
+}
 .menu-section .menu li:hover {
   background: linear-gradient(transparent 60%, rgb(4, 217, 255) 60%);
 }
@@ -141,21 +146,21 @@ html {
 /* ══════════════════════════════════════════════════════════════════════════ */
 .item {
   width: 99%;
-  height: 85vh;
+  height: 80vh;
   overflow: hidden;
   border: 1px solid #a2efe3;
 }
 
 .stack {
-  height: 300px;
+  height: 350px;
 }
 
 .sections.stack {
-  height: 310px;
+  height: 360px;
 }
 
 .sections {
-  height: calc(85vh + 10px);
+  height: calc(80vh + 10px);
 }
 
 /* ┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉ */

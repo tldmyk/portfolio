@@ -45,6 +45,11 @@ $list-element-topbottom: -0.625rem;
     width: fit-content;
     height: inherit;
     li {
+      a{
+        color: #000;
+        text-decoration: none;
+
+      }
       &:hover {
         background: linear-gradient(transparent 60%, rgb(4, 217, 255) 60%);
       }

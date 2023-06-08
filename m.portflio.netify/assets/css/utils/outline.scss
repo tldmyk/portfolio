@@ -26,7 +26,7 @@
 /*                               INNER AND OUTER                              */
 /* ══════════════════════════════════════════════════════════════════════════ */
 
-$section-inner__height: 85vh;
+$section-inner__height: 80vh;
 $section-out__height: calc($section-inner__height + 10px);
 
 .item {
@@ -35,7 +35,7 @@ $section-out__height: calc($section-inner__height + 10px);
   overflow: hidden;
   border: 1px solid #a2efe3;
 }
-$section-stack__innner-h: 300px;
+$section-stack__innner-h: 350px;
 $section-stack__outer-h: calc($section-stack__innner-h + 10px);
 .stack {
   height: $section-stack__innner-h;
