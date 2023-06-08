@@ -24,6 +24,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <script src="assets/js/navbar.js" defer></script>
+    <script src="assets/js/date.js" defer></script>
   </head>
   <body class="body">
     <!-- ═══════════════════════════════════════════════════════════════════ -->
@@ -42,10 +43,7 @@
         <hr />
         <div id="recent">
           <p>
-            <a href=""
-              >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Ratione, est?</a
-            >
+            status : <span id="status">date</span> : currently seeking for a job
           </p>
         </div>
       </header>
@@ -189,7 +187,7 @@
     </div>
     <!-- ┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉ -->
     <div class="footer container">
-      <p>Made by Aaron Perez &copy; 2023</p>
+      <p>Made by Aaron Perez &copy; <span id="year">year</span></p>
       <!--   <div id="icons">
         <a href="" class="icon"
           ><svg
