@@ -30,3 +30,16 @@
     transform: scale(1.05);
   }
 }
+/* fixes a tag being behind inner border */
+.link {
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+  }
+}

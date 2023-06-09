@@ -1,7 +1,7 @@
 @mixin inner-border($border-color, $width) {
   &:hover::after {
     box-sizing: border-box;
-    content: "";
+    content: '';
     position: absolute;
     border: $width solid $border-color;
     top: 0;
