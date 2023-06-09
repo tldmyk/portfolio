@@ -1,0 +1,251 @@
+* {
+  margin: 0px;
+}
+body {
+  background-color: rgb(36, 36, 36);
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+h1 {
+  font-size: 60px;
+  margin-top: 100px;
+}
+
+.container {
+  width: 1100px;
+  justify-content: space-between;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  float: left;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.box {
+  width: 60px;
+  height: 60px;
+  padding: 2px;
+  margin: auto;
+  border-radius: 50%;
+  background-color: #3f5efb;
+  display: flex;
+  align-items: center;
+}
+
+.box:hover {
+  background: linear-gradient(90deg, #db36f1 0%, #3f5efb 100%);
+}
+
+.box #icon {
+  margin: auto;
+  cursor: pointer;
+}
+
+.box .hamburger .line {
+  display: grid;
+  width: 40px;
+  height: 7px;
+  background: white;
+  margin: 5px;
+  border-radius: 2rem;
+}
+
+.box .arrowdown:hover {
+  transform: rotate(90deg);
+}
+.box .arrowdown:hover .line:nth-child(1) {
+  transform: rotate(45deg) translate(6px, -6px);
+  transition: cubic-bezier(1, 0, 0, 1) 800ms;
+}
+.box .arrowdown:hover .line:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, 6px);
+  transition: cubic-bezier(1, 0, 0, 1) 800ms;
+}
+
+.box .zoomx:hover .line {
+  opacity: 0;
+}
+.box .zoomx:hover .line:nth-child(1) {
+  transform: rotate(-40deg) translate(-8px, 9px);
+  opacity: 1;
+  animation: expand 0.6s;
+}
+.box .zoomx:hover .line:nth-child(3) {
+  transform: rotate(40deg) translate(-8px, -9px);
+  opacity: 1;
+  animation: expand 0.6s;
+}
+
+@keyframes expand {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 45px;
+  }
+}
+
+.box .minus:hover .line:nth-child(1) {
+  width: 0px;
+  margin-left: 40px;
+  transition: cubic-bezier(0.895, 0.03, 0.685, 0.22) 500ms;
+}
+.box .minus:hover .line:nth-child(3) {
+  transition: cubic-bezier(0.895, 0.03, 0.685, 0.22) 500ms;
+  width: 0px;
+  margin-left: -40px;
+}
+
+.box .strawberry:hover .line:nth-child(2) {
+  width: 26px;
+  transition: cubic-bezier(0.895, 0.03, 0.685, 0.22) 300ms;
+}
+.box .strawberry:hover .line:nth-child(3) {
+  transition: cubic-bezier(0.895, 0.03, 0.685, 0.22) 300ms;
+  width: 13px;
+}
+
+.box .blinds .line {
+  border-radius: 0.3rem 0.3rem 0rem 0rem;
+}
+.box .blinds:hover .line {
+  transform: rotateX(100deg);
+  transition: 0.4s ease-out;
+}
+
+.box .sandwich .line:nth-child(2) {
+  width: 25px;
+}
+.box .sandwich:hover .line:nth-child(1) {
+  transform: rotate(-35deg) translate(-7px, 10px);
+  transition: cubic-bezier(1, 0, 0, 1) 800ms;
+}
+.box .sandwich:hover .line:nth-child(3) {
+  transform: rotate(35deg) translate(-7px, -10px);
+  transition: cubic-bezier(1, 0, 0, 1) 800ms;
+}
+.box .sandwich:hover .line:nth-child(2) {
+  width: 0px;
+  transition: cubic-bezier(1, 0, 0, 1) 800ms;
+}
+
+.box .hotdog .line:nth-child(1) {
+  width: 23px;
+  transform: translate(-8px, 0px);
+}
+
+.box .hotdog .line:nth-child(3) {
+  width: 23px;
+  transform: translate(8px, 0px);
+}
+.box .hotdog:hover .line:nth-child(2) {
+  transform: rotate(-45deg);
+  transition: cubic-bezier(1, 0, 0, 1) 800ms;
+}
+.box .hotdog:hover .line:nth-child(1) {
+  transform: rotate(45deg) translate(0px, 8.5px);
+  transition: cubic-bezier(1, 0, 0, 1) 800ms;
+}
+.box .hotdog:hover .line:nth-child(3) {
+  transform: rotate(45deg);
+  transition: cubic-bezier(1, 0, 0, 1) 800ms;
+  transform: rotate(45deg) translate(0px, -8.5px);
+}
+
+.box .veggie-arrow:hover .line:nth-child(1) {
+  transform: rotate(-20deg);
+  transition: cubic-bezier(0.455, 0.03, 0.515, 0.955) 300ms;
+}
+.box .veggie-arrow:hover .line:nth-child(2) {
+  transform: rotate(20deg);
+  transition: cubic-bezier(0.455, 0.03, 0.515, 0.955) 300ms;
+}
+
+.box .veggiex:hover .line:nth-child(1) {
+  transform: rotate(-35deg) translate(-3px, 5px);
+  transition: cubic-bezier(0.455, 0.03, 0.515, 0.955) 300ms;
+}
+.box .veggiex:hover .line:nth-child(2) {
+  transform: rotate(35deg) translate(-3px, -5px);
+  transition: cubic-bezier(0.455, 0.03, 0.515, 0.955) 300ms;
+}
+
+.box .cross {
+  transform: translate(0px, 6px);
+}
+
+.box .cross .line:nth-child(2) {
+  transform: rotate(90deg) translate(-12px, 0px);
+}
+.box .cross:hover .line:nth-child(2) {
+  width: 0px;
+  transition: cubic-bezier(1, 0, 0, 1) 800ms;
+}
+
+.box .kebab .line {
+  display: grid;
+  width: 10px;
+  height: 10px;
+  border-radius: 2rem;
+  margin: 5px;
+  background: white;
+}
+
+.box .turn:hover {
+  transform: rotate(-90deg);
+  transition: cubic-bezier(0.455, 0.03, 0.515, 0.955) 300ms;
+}
+
+.box .minus2 {
+  transform: rotate(90deg);
+}
+
+.box .minus2:hover .line:nth-child(3) {
+  width: 40px;
+  transform: rotate(90deg);
+}
+
+.box .minus2:hover .line:nth-child(1),
+.box .minus2:hover .line:nth-child(2) {
+  display: none;
+}
+.box .candybox .line,
+.box .chocolate .line {
+  display: inline-table;
+  margin: 1px;
+}
+.box .chocolate .line {
+  border-radius: 0rem;
+}
+
+.box .candybox:hover .remove {
+  animation: fade 1.5s;
+  opacity: 0;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.box .chocolate:hover .remove {
+  animation: reduce 1s;
+  height: 0px;
+}
+
+@keyframes reduce {
+  0% {
+    height: 10px;
+  }
+  100% {
+    height: 0px;
+  }
+}
